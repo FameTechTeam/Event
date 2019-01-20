@@ -1,0 +1,453 @@
+<html>
+    <head>
+        <title>Unviewed Contestants | Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen|Noto+Sans+KR|Shadows+Into+Light|Concert+One|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid-navbar">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand"><span>T</span>alent <span>S</span>howcast</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsed-navbar" onclick="menuicon(this)">
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                </div>
+                <div id="collapsed-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="rank.html">Ranking</a></li>
+                        <li><a href="users.html">Users</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#">Log Out <span class="glyphicon glyphicon-log-out"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    
+
+             <!--Dashboard named panel with glyphicon rotation-->
+    <div class="container-fluid" style="padding: 0; margin-top: 20px;">
+        <div class="panel panel-default1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                        <h1 class="dashboard slideInRight">Unviewed Contestants<span class="glyphicon glyphicon-cog"></span></h1>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary btn1 dropdown-toggle" data-toggle="dropdown">Create Manually          
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a type="button" data-toggle="modal" data-target="#addPages">Upload videos</a></li>
+                                <li><a type="button" data-toggle="modal" data-target="#addUsers">Add Users</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div>   
+        </div>
+    </div>
+        
+        <section id="breadcrumb">
+            <div class="container-fluid">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="rank.html">Ranking</a></li>
+                    <li><a href="users.html">Users</a></li>                    
+                    <li class="active"><a href="unview.html">Unviewed</a></li>
+                    <li><a href="videos.html">Uploaded Videos</a></li>
+                </ol>
+            </div>
+        </section>
+
+            <!--Contents like pages,posts,users-->
+
+            <!--left side -->
+        <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+
+                                <!--Widget-->
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+            <div class="container-fluid2" style="padding-left: 15px;">
+
+                <div class="row">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item"><span class="fa fa-user"></span> Users <span class="badge">203</span></a>
+                        <a href="#" class="list-group-item"><span class="fa fa-eye"></span> Viewed <span class="badge">133</span></a>
+                        <a href="#" class="list-group-item"><span class="fa fa-eye-slash"></span> Unviewed <span class="badge">70</span></a>
+                    </div>
+                </div>
+
+                                <!--Progress bar for data checking-->
+                <div class="row">
+                    <div class="list-group">
+                        <div class="list-group-item">Disk Space Used
+                            <div class="progress">
+                                <div class="progress-bar progress1" aria-valuenow="43"
+                                aria-valuemin="0" aria-valuemax="100" style="width:43%">43%</div>
+                            </div>
+                        </div>
+                        <div class="list-group-item">Bandwidth Used
+                            <div class="progress">
+                                <div class="progress-bar progress2" aria-valuenow="82"
+                                aria-valuemin="0" aria-valuemax="100" style="width:82%">82%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+                
+                <!--Right side-->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                
+                <div class="container-fluid dash">
+                
+                <div class="row">
+                    <div class="list-group">
+                    <div class="list-group-item active">Dashboard</div>
+                    <div class="list-group-item">
+                        <div class="flex-container">
+                            
+                            <div class="box box1 dashed-effect1">
+                            <a href="users.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <p class="count">203</p>
+                                <p class="dash-names">Total Users</p>
+                            </a>
+                            </div>
+                            <div class="box box2 dashed-effect2">
+                            <a href="unview.html">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <p class="count">70</p>
+                                <p class="dash-names">Unviewed</p>
+                            </a>
+                            </div>
+                            <div class="box box3 dashed-effect3">
+                            <a href="videos.html">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <p class="count">124</p>
+                                <p class="dash-names">Uploaded videos</p>
+                            </a>
+                            </div>
+                            <div class="box box4">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-stats" style="text-align: center;"></span> 
+                                <p class="count">12,044</p>
+                                <p class="dash-names">Total Visited</p>  
+                            </a>
+                            </div>
+                            
+                        </div>
+                    </div>    
+                    </div>    
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+        </div>
+
+
+        <!--Review table-->
+
+    <div class="container-fluid1">
+        <div class="row">
+            <div class="list-group">
+                <div class="list-group-item active">All Users</div>
+            <div class="list-group-item">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover tabled-effect">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>User-ID</th>
+                            <th>Applied for</th>
+                            <th>Votes</th>
+                            <th>Details</th>
+                            <th>Selection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Praveen</td>
+                            <td>user001</td>
+                            <td>Music Composer</td>
+                            <td>624</td>
+                            <td>
+                                <button type="button" class="btn btn-view" data-toggle="modal" data-target="#user-view">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-approve">
+                                    <span class="fa fa-check" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-reject">
+                                    <span class="fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Anjana</td>
+                            <td>user002</td>
+                            <td>Aerobics</td>
+                            <td>444</td>
+                            <td>
+                                <button type="button" class="btn btn-view" data-toggle="modal" data-target="#user-view">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-approve">
+                                    <span class="fa fa-check" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-reject">
+                                    <span class="fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rajesh</td>
+                            <td>user003</td>
+                            <td>Dance</td>
+                            <td>367</td>
+                            <td>
+                                <button type="button" class="btn btn-view" data-toggle="modal" data-target="#user-view">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-approve">
+                                    <span class="fa fa-check" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-reject">
+                                    <span class="fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>Kumar</td>
+                            <td>user004</td>
+                            <td>Magical stuff</td>
+                            <td>301</td>
+                            <td>
+                                <button type="button" class="btn btn-view" data-toggle="modal" data-target="#user-view">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-approve">
+                                    <span class="fa fa-check" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-reject">
+                                    <span class="fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Siddarath</td>
+                            <td>user005</td>
+                            <td>Yoga</td>
+                            <td>124</td>
+                            <td>
+                                <button type="button" class="btn btn-view" data-toggle="modal" data-target="#user-view">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-approve">
+                                    <span class="fa fa-check" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-reject">
+                                    <span class="fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Included modal which is hidden until clicking, so i placed here-->
+            <div id="user-view" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 class="modal-title" style="color: white;">CONTESTANTS</h3>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="video">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe src="https://www.youtube.com/embed/v9GK4Rf6w3A?showinfo=0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="thumbnail img-responsive">
+                                        <img src="praveenkumar.jpg" alt="image">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="position: relative;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0;">
+                                                <ul style="list-style: none;">  
+                                                    <li>Name: <i>Praveenkumar</i> </li>
+                                                    <li>User ID: <i>user001</i> </li>
+                                                    <li>Applied for: <i>Music Composer</i> </li>
+                                                    <li>E-mail: <i>praveenkumar7501@gmail.com</i> </li>
+                                                    <li>Mobile: <i>7502650721</i> </li> 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="panel panel-vote">
+                                                <p>Votes:</p>
+                                                <p style="text-indent: 5px;">250</p> 
+                                                <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="modal-btn-select-left">
+                                                    <button type="button" class="btn modal-btn-accept">Accept</button>
+                                                    <button type="button" class="btn modal-btn-reject">Reject</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+              
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--review-table container ending-->
+
+
+        <div style="height: 150px;"></div>
+
+
+        <!--Included the footer-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="contain">
+                            <h3>About</h3>
+                            <p>Looking for something to do in Bangalore, India? 
+                                Whether you're a local, new in town or just 
+                                cruising through we've got loads of great tips 
+                                and events.</p>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 col-md-4 col-md-push-4 col-sm-12 col-xs-12">
+                        <div class="contain">
+                            <h3>Contact</h3>
+                            <p>1100, Double park road, Indira nagar, Bangalore</p>
+                            <h6 style="display: inline; color: white;">Ring me @ </h6>
+                            <p style="display: inline;">7502650721</p></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-md-pull-4 col-sm-12 col-xs-12">
+                        <div class="contain container-center">
+                            <h3>Powered by</h3>
+                            <p><span>P</span>raveen <span>C</span>ruzerz</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!--Modal for the dropdown content-->
+
+        <div id="addPages" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              
+        <form>    
+            <div class="modal-content">
+            
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="title">Page Title</label>
+                    <input type="text" id="title" class="form-control" placeholder="Page title">
+                </div>
+                <div class="form-group">
+                    <label for="editor">Page Body</label>
+                    <textarea id="editor" class="form-control" placeholder="Page Body"></textarea>
+                </div>
+                <label>
+                    <input type="checkbox"> Publish
+                </label>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+            </div>
+        </form>
+              
+            </div>
+        </div>
+
+
+
+        <script>
+            //this is for rotation of glyphicon-cog 
+            $(function rotating()
+            {
+                $('.glyphicon-cog').addClass('glyphicon-cog-turn');
+            })
+            //incuded the ckeditor
+            //CKEDITOR.replace('editor');
+            
+            //Adding the animation effect for menu icon
+            function menuicon(x){
+                x.classList.toggle("change");
+            }
+        </script>
+    </body>
+</html>

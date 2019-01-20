@@ -1,0 +1,1036 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, rgb(238, 243, 252), #ECEFF4);
+}
+
+/*Navigation is used, for changing first gothrough the code*/
+
+.container-fluid-navbar
+{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar
+{
+    min-height: 40px;
+    background-color: rgb(54, 156, 230);
+    border: none;
+}
+
+.navbar-inverse
+{
+    border-radius: 0;
+}
+
+.navbar .navbar-header a, .navbar .collapse ul li a
+{
+    color: white;
+}
+
+.navbar .navbar-header a
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar .collapse ul li a
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand
+{
+    background-image: radial-gradient(rgb(56, 56, 255),rgb(26, 26, 148));
+    height: 49px;
+}
+
+.navbar .navbar-header a span
+{
+    color: hsl(54, 96%, 51%);
+}
+
+.navbar .active-nav
+{
+    background-color: #70D3FF;
+    color: white;
+    border: none;
+}
+
+.navbar .collapse ul li:hover
+{
+    background-color: #1A1A94;
+}
+
+.navbar-toggle 
+{
+    margin-top: 9px;
+    border: none;
+}
+
+.navbar .navbar-toggle:hover
+{
+    background-color: rgb(54, 156, 230);
+    color: white;
+}
+
+.navbar .navbar-toggle
+{
+    background-color: rgb(54, 156, 230);
+    color: white;
+}
+
+@media (min-width: 768px) 
+{
+    .navbar-nav > li > a, .navbar-brand
+    {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #collapsed-navbar
+    {
+        text-align: center;
+        z-index: 1000;
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+    }
+
+    .navbar-nav
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #collapsed-navbar a
+    {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+  
+/*panel having heading and dropdown content*/
+
+.panel-default1
+{
+    border: none;
+    border-radius: 0;
+    background-image: linear-gradient(rgb(129, 196, 207),rgb(103, 231, 253));
+    color: rgb(255, 255, 255);
+    margin-top: -20px;
+}
+
+.dashboard
+{
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 20px;
+}
+
+@media (max-width: 518px)
+{
+    .dashboard
+    {
+        padding-top: 10px;
+    }
+}
+
+/*dropdown content*/
+
+.dropdown
+{
+    position: relative;
+    right: 0;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.dropdown .btn-primary
+{
+    background-color: #4489d8;
+}
+
+.dropdown .btn-primary:hover
+{
+    background-color: rgb(115, 25, 199);
+    border: 1px solid rgb(115, 25, 199);
+}
+
+@media screen and (max-width: 992px)
+{
+    .dropdown
+    {
+        margin-left: 17px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .dashboard
+    {
+        margin: 0;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+/*Setting icon */
+
+.glyphicon-cog
+{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.glyphicon-cog-turn
+{
+    animation:cog-turn 16s;
+}
+
+
+/*Breadcrumbs*/
+
+.breadcrumb :not(.active) a
+{
+    color: rgb(192, 185, 185);
+}
+
+
+/*widgets*/
+
+.list-group .active
+{
+    background-color: #369CE6;
+}
+
+
+/*Dashboard container*/
+
+.flex-container 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+  
+.box1, .box2, .box3, .box4
+{
+    border: none;
+    width: 180px;
+    padding: 17px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    -webkit-transition: transform 1s;
+    -moz-transititon: transform 1s;
+    transition: transform 1s;
+}
+
+.box1
+{
+    background-image: linear-gradient(to right, rgb(86, 230, 198), #5EEDF1);
+}
+
+.box2
+{
+    background-image: linear-gradient(to right, #6147EC, #8465F7);
+}
+
+.box3
+{
+    background-image: linear-gradient(to right, rgb(86, 230, 198), #5EEDF1);
+}
+
+.box4
+{
+    background-image: linear-gradient(to right, #6147EC, #8465F7);
+}
+
+.box .glyphicon
+{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+}
+
+.flex-container > .box > a > span
+{
+    display: block;
+    padding-bottom: 0;
+}
+
+.flex-container > .box > a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.count
+{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.dash-names
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 1022px)
+{
+    .flex-container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-container > .box 
+    {
+        border: 1px solid #e0e0d1;
+        background-color: #e0e0d1;
+        max-width: 200px;
+        padding: 17px;
+        margin: 10px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 30px;
+        border-radius: 5px;
+        -webkit-transition: transform 1s;
+        -moz-transititon: transform 1s;
+        transition: transform 1s;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .container-fluid2
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+/*table related and animation effects made on table*/
+
+.container-fluid1
+{
+    margin: 0 30px;
+}
+
+.container-fluid1 .list-group-item:not(:first-child)
+{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.tabled-effect th, .tabled-effect td
+{
+    text-align: center;
+}
+
+.tabled-effect .centering-td
+{
+    max-width: 150px;
+}
+
+.tabled-effect .btn-approve
+{
+    padding: 6px 30px;
+    border: 1px solid rgb(99, 199, 86);
+    color: rgb(99, 199, 86);
+    background-color: white;
+}
+
+.tabled-effect .btn-approve:hover
+{
+    color: white;
+    background-color: rgb(99, 199, 86);
+}
+
+.tabled-effect .btn-reject
+{
+    padding: 6px 30px;
+    border: 1px solid rgb(212, 51, 51);
+    color: rgb(212, 51, 51);
+    background-color: white;
+}
+
+.tabled-effect .btn-reject:hover
+{
+    color: white;
+    background-color: rgb(212, 51, 51);
+}
+
+.tabled-effect .btn-view
+{
+    padding: 5px 45px;
+    color: white;
+    background-image: linear-gradient(to right, #59B9EC,#84CEEB);
+    border: 1px solid #84CEEB;
+}
+
+.tabled-effect .btn-view:hover
+{
+    background-color: #2ca78a;
+    color: white;
+    border: 1px solid #2ca78a;
+}
+
+
+/*CSS for rank.html*/
+
+.tabled-effect .approval-status
+{
+    margin: 0;
+    max-width: 260px;
+}
+
+.tabled-effect .approval-status p
+{
+    border-radius: 2px;
+}
+
+.tabled-effect .approval-status > .accepted
+{
+    padding: 5px 15px;
+    display: inline-block;
+    border: 1px solid rgb(23, 160, 23);
+    color: white;
+    background-color: rgb(23, 160, 23);
+    margin: 0;
+}
+
+.tabled-effect .approval-status > .rejected
+{
+    padding: 5px 19px;
+    display: inline-block;
+    border: 1px solid rgb(250, 68, 68);
+    color: white;
+    background-color: rgb(250, 68, 68);
+    margin: 0;
+}
+
+
+/*Modal inside the review table*/
+
+.modal-content
+{
+    background-image: linear-gradient(rgb(37, 218, 249), rgb(78, 252, 237));
+}
+
+.modal-btn-accept, .modal-btn-reject
+{
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.modal-btn-accept
+{ 
+    color: rgb(8, 151, 39);
+    font-weight: bold;
+}
+
+.modal-btn-reject
+{   
+    color: rgb(243, 47, 47);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.modal-btn-accept:hover
+{
+    color: white;
+    background-color: rgb(8, 151, 39);
+    border: 1px solid rgb(8, 151, 39);
+}
+
+.modal-btn-reject:hover
+{
+    color: white;
+    background-color: rgb(243, 47, 47);
+    border: 1px solid rgb(243, 47, 47);
+}
+
+.modal-btn-select-left
+{
+    float: left;
+}
+
+.modal-btn-select-right
+{
+    float: right;
+}
+
+.panel-vote
+{
+    background-color: #11886c;
+    color: white;
+    text-align: center;
+    border: none;
+    max-width: 47%; 
+    padding: 3px 10px;
+}
+
+.panel-vote p
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.video
+{
+    border: none;
+}
+
+.modal-header
+{
+    padding: 9px;
+}
+
+.modal-body ul
+{
+    padding-left: 0px; 
+}
+
+.modal-body ul li 
+{
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.modal-body ul li i
+{
+    color: black;
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.modal-body .thumbnail
+{
+    margin-left: 10px; 
+    max-height: 190px;
+    max-width: 200px;
+}
+
+
+/*Footer parts*/
+
+.footer
+{
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    bottom: 0;
+}
+
+.contain
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.container-center
+{
+    font-size: 2em !important;
+}
+
+.footer > .container-fluid , .row
+{
+    margin: 0;
+    padding: 0;
+} 
+
+.footer p, .footer h3
+{
+    color: white;
+    line-height: 1.5em;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.footer .contain p
+{
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+.footer > .container-fluid p span 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: orange;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+/* videos.html  */
+
+/* -> Displaying the youtube 
+[ left ] */
+
+.video-left
+{
+    border: 3px inset #ccc8c8;
+}
+
+.ul-indication ul
+{
+    padding-bottom: 0;
+    padding-left: 19px;
+    margin-bottom: 0;
+}
+
+.ul-indication h2
+{
+    color: rgb(64, 64, 66);
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.ul-indication ul li 
+{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.ul-indication ul li i
+{
+    color: black;
+    font-style: normal;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ul-indication table
+{
+    margin-bottom: 10px;
+}
+
+.ul-indication table tr td
+{
+    padding-left: 20px;
+    line-height: 22px;
+}
+
+.panel-vote-videopage
+{
+    margin-top: 30%;
+    margin-right: 15px;
+    background-image: linear-gradient(rgb(0, 217, 255),rgb(129, 219, 255));
+    color: white;
+    text-align: center;
+    border: none;
+    max-width: 100%; 
+    padding: 20px 15px;
+}
+
+.panel-vote-videopage p
+{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 21px;
+}
+
+/* Displaying the contestant little
+ details with clicking */
+
+.container-fluid-box
+{
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.container-fluid-box:hover
+{
+    background-image: linear-gradient(rgb(228, 255, 255), rgb(253, 239, 239));
+}
+
+.container-fluid-box .thumbnail
+{
+    max-height: 150px;
+    max-width: 150px;
+    margin: 3px 2px;
+    border: none;
+}
+
+.container-fluid-box ul
+{
+    padding: 0;
+}
+
+.container-fluid-box ul li 
+{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 4px 0 0 0; 
+}
+
+.container-fluid-box ul li i
+{
+    color: black;
+    font-style: normal;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.col-alteration-left
+{
+    padding: 0;
+}
+
+.col-alteration-right
+{
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+}
+
+.element
+{
+    border: 1px solid rgb(255, 254, 254);
+    margin: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.video-table
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.video-table .table-responsive
+{  
+    background-image: linear-gradient(rgb(209, 239, 243),rgb(202, 247, 255));
+}
+
+/*------------------------------------*/
+
+/*Customizing the scroll bar of video.html*/
+
+::-webkit-scrollbar 
+{
+    width: 5px;
+}
+
+/* Displays the track for scrollbar*/
+::-webkit-scrollbar-track 
+{
+    background: #f1f1f1; 
+}
+   
+  /* Handle for scrollbar */
+::-webkit-scrollbar-thumb 
+{
+    background: rgb(219, 215, 215); 
+}
+  
+  /* Scrollbar handle hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(170, 167, 167); 
+}
+
+
+
+/*video.html -> Displaying the 
+video right-side table*/
+
+@media (max-width: 1169px)
+{
+    .video-table .table-responsive
+    {
+        overflow-y: scroll;
+        height: 545px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .video-table .table-responsive
+    {
+        overflow-y: scroll;
+        height: 510px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .video-table .table-responsive
+    {
+        overflow-y: scroll;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .video-table .table-responsive
+    {
+        overflow-y: scroll;
+        height: 172px;
+    }   
+}
+
+@media (max-width: 992px)
+{
+    .panel-vote-videopage
+    {
+        margin-top: 5px;
+        margin-left: 18px;
+        max-width: 25%; 
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .panel-vote-videopage
+    {
+        margin-top: 5px;
+        max-width: 50%; 
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .panel-vote-videopage
+    {
+        margin-top: 5px;
+        max-width: 100%; 
+        padding: 10px 10px;
+    }
+}
+
+
+/* Animating the menu icons*/
+
+.change .bar1
+{
+    transform: rotate(45deg) translate(5px, 2px);
+    -moz-transform: rotate(45deg) translate(5px, 2px);
+    -ms-transform: rotate(45deg) translate(5px, 2px);
+    -o-transform: rotate(45deg) translate(5px, 2px);
+    -webkit-transform: rotate(45deg) translate(5px, 2px);  
+    transition: 0.7s;
+}
+
+.change .bar2
+{
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.change .bar3
+{ 
+    transform: rotate(135deg) translate(-6px, 4px);
+    -moz-transform: rotate(135deg) translate(-6px, 4px);
+    -ms-transform: rotate(135deg) translate(-6px, 4px);
+    -o-transform: rotate(135deg) translate(-6px, 4px);
+    -webkit-transform: rotate(135deg) translate(-6px, 4px);
+    transition: 0.7s;
+}
+
+
+/* Animated effects for glyphicon-cog */
+
+.glyphicon-cog:hover
+{
+    transition: transform 3s;
+    -webkit-transition: transform 3s;
+    -moz-transition: transform 3s;
+    transform: rotate(360deg);
+}
+
+@keyframes cog-turn
+{
+    100% {
+    transform: rotate(1800deg);
+    -moz-transform: rotate(1800deg);
+    -ms-transform: rotate(1800deg);
+    -webkit-transform: rotate(1800deg);
+    }
+}
+
+
+/* Dashboard container effects*/
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover
+{
+    transform: scale(1.100,1.100);
+    -moz-transform: scale(1.100,1.100);
+    -ms-transform: scale(1.100,1.100);
+    -webkit-transform: scale(1.100,1.100);
+
+    -moz-box-shadow: 1px 2px 40px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 40px rgba(0, 0, 0, .5);
+    box-shadow: 1px 20px 40px rgba(0, 0, 0, .5);
+}
+
+
+/*Animated the progress bar*/
+
+@keyframes bar1
+{
+   from {   width: 0; }
+   to {  width: 43%; }
+}
+
+.progress1
+{
+    background-image: linear-gradient(to right, #8860D0, #5AB8EB);
+    margin-bottom: 10px;
+    animation-name: bar1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bar2
+{
+   from {   width: 0; }
+   to {  width: 82%; }
+}
+
+.progress
+{
+    margin-bottom: 8px;
+}
+
+.progress2
+{
+    background-image: linear-gradient(to right, #8860D0, #5AB8EB);
+    animation-name: bar2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+/*Animated hover effect on dashboard*/
+
+.dashed-effect1
+{
+    animation-name: dash-effect1;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+}
+
+.dashed-effect2
+{
+    animation-name: dash-effect2;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+}
+
+.dashed-effect3
+{
+    animation-name: dash-effect3;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+}
+
+@keyframes dash-effect1
+{
+    from { margin-left: 100px; overflow: hidden; }
+    to {  }
+}
+
+@keyframes dash-effect2
+{
+    from { margin-left: 75px; overflow: hidden; }
+    to {  }
+}
+
+@keyframes dash-effect3
+{
+    from { margin-left: 50px; overflow: hidden; }
+    to {  }
+}
+
+
+/*Main table moving up effect*/
+
+@keyframes table-effect
+{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+.tabled-effect
+{
+    animation-name: table-effect;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+
+/*------------------------------------*/
+
+/*animation effects for panel dashboard*/
+ 
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+@keyframes slideInRight {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+ 
